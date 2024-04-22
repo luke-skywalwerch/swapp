@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de Personajes de Star Wars</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}" type="text/css">
+    <script th:src="@{/js/character.js}"></script>
+</head>
+
+<body>
+    <h1>Personajes de Star Wars</h1>
+    <ul>
+        <li th:each="character : ${characters}">
+            <a href="javascript:void(0)" class="character-link" th:data-uid="${character.uid}">
+                <span th:text="${character.name}"></span>
+            </a>
+            <div class="character-details" th:id="'character-details-' + ${character.uid}"></div>
+        </li>
+    </ul>
+</body>
+
+</html>
