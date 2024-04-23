@@ -10,10 +10,8 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.web.client.RestTemplate;
 
-import com.daw.swapp.model.CharacterDetails;
 import com.daw.swapp.model.CharacterDetailsResponse;
 import com.daw.swapp.model.CharacterResponse;
-import com.daw.swapp.model.CharacterDetailsResponse.CharacterDetailsResult;
 
 @ExtendWith(MockitoExtension.class)
 public class CharacterServiceTest {
@@ -26,6 +24,8 @@ public class CharacterServiceTest {
 
     @Test
     void testListCharacters() {
+        int page = 1;
+
         CharacterResponse expectedResponse = new CharacterResponse();
         expectedResponse.setMessage("test");
         expectedResponse.setTotalRecords(234);
@@ -35,7 +35,7 @@ public class CharacterServiceTest {
         when(restTemplate.getForObject(url, CharacterResponse.class))
                 .thenReturn(expectedResponse);
 
-        CharacterResponse actualResponse = characterService.listCharacters();
+        CharacterResponse actualResponse = characterService.listCharacters(page);
 
         assertEquals(expectedResponse.getMessage(), actualResponse.getMessage());
         assertEquals(expectedResponse.getTotalRecords(), actualResponse.getTotalRecords());

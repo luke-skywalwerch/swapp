@@ -27,13 +27,14 @@ public class CharacterControllerTest {
 
     @Test
     void testShowCharacters() {
+        int page = 1;
         CharacterResponse expectedCharacters = new CharacterResponse();
-        when(characterService.listCharacters()).thenReturn(expectedCharacters);
-        
-        String viewName = characterController.showCharacters(model);
+        when(characterService.listCharacters(anyInt())).thenReturn(expectedCharacters);
+
+        String viewName = characterController.showCharacters(page, model);
 
         assertEquals("characters", viewName);
         verify(model).addAttribute("characters", expectedCharacters.getResults());
-        verify(characterService).listCharacters();
+        verify(characterService).listCharacters(anyInt());
     }
 }

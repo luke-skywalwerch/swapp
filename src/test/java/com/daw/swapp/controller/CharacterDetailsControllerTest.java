@@ -8,7 +8,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.ui.Model;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 
 import com.daw.swapp.model.CharacterDetails;
 import com.daw.swapp.model.CharacterDetailsResponse;
@@ -35,9 +36,12 @@ public class CharacterDetailsControllerTest {
 
         when(characterService.getCharacterDetails(characterId)).thenReturn(mockResponse);
 
-        CharacterDetails actualDetails = characterDetailsController.getCharacterDetails(characterId);
-        System.out.println(actualDetails);
+        ResponseEntity<CharacterDetails> detailsResponse = characterDetailsController.getCharacterDetails(characterId);
+        CharacterDetails actualDetails = detailsResponse.getBody();
 
+        assertNotNull(detailsResponse);
+        assertEquals(HttpStatus.OK, detailsResponse.getStatusCode());
+        assertNotNull(actualDetails, "The body of the response should not be null.");
         assertEquals(characterDetails, actualDetails, "The returned character details should be the same as expected.");
         verify(characterService).getCharacterDetails(characterId);
     }

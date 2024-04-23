@@ -18,6 +18,11 @@
             <div class="character-details" th:id="'character-details-' + ${character.uid}"></div>
         </li>
     </ul>
+    <div id="pagination" class="pagination">
+        <button onclick="changePage(-1)">Anterior</button>
+        <span id="pageNumber"></span>
+        <button onclick="changePage(1)">Siguiente</button>
+    </div>
 </body>
 
 </html>

@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('pageNumber').textContent = currentPage;
+
     const characterLinks = document.querySelectorAll('.character-link');
     let lastOpened = null;
 
@@ -26,6 +28,7 @@ function fetchCharacterDetails(id, detailsDiv) {
     fetch('/api/character/' + id)
         .then(response => response.json())
         .then(data => {
+            debugger;
             detailsDiv.innerHTML = `
                 <p>Height: ${data.height}</p>
                 <p>Mass: ${data.mass}</p>
@@ -34,4 +37,13 @@ function fetchCharacterDetails(id, detailsDiv) {
 
             detailsDiv.classList.add('open');
         });
+}
+
+var currentPage = new URLSearchParams(window.location.search).get('page') || 1;
+
+function changePage(delta) {
+    currentPage = parseInt(currentPage) + delta;
+    currentPage = Math.max(1, currentPage);
+
+    window.location.href = '/characters?page=' + currentPage;
 }
