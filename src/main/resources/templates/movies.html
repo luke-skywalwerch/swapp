@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mooovies</title>
+    <link rel="stylesheet" th:href="@{/css/movies.css}" />
+    <script th:src="@{/js/movies.js}" defer></script>
+</head>
+
+<body>
+    <h1>Mooovie list</h1>
+    <div class="searchBar">
+        <a href="/movies/add" class="button">Add Movie</a>
+        <div class="search">
+            <input type="text" id="directorInput" placeholder="Search by director name" />
+            <button class="searchMovies" onclick="searchMovies()">Search</button>
+        </div>
+    </div>
+    <ul id="moviesList">
+        <li th:each="movie : ${movies}">
+            <h2 th:class="${movie.title == null ? 'nullTitle' : ''}" th:text="${movie.title ?: 'No title set'}">Movie title</h2>
+            <p th:text="'Director: ' + ${movie.details?.director?.name}">Director</p>
+            <p th:text="'Duración: ' + ${movie.duration} + ' minutos'">Duration</p>
+    </ul>
+    </ul>
+</body>
+
+</html>
