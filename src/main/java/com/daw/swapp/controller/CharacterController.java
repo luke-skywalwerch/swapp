@@ -15,6 +15,8 @@ public class CharacterController {
     @Autowired
     private CharacterService characterService;
 
+    //hola
+
     @GetMapping("/characters")
     public String showCharacters(@RequestParam(defaultValue = "1") int page, Model model) {
         CharacterResponse characters = characterService.listCharacters(page);
