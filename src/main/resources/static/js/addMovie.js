@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             body: jsonData
         }).then(response => {
-            debugger
             if (response.ok) {
                 window.location.href = "/movies";
             } else {
