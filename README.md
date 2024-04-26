@@ -8,5 +8,5 @@ Evergrowing, improvable MVC learning project using
 * ...
 # run
 ./mvnw spring-boot:run <br>
-* http://localhost:8080/characters -> mongoDB
-* http://localhost:8080/movies -> swapi
+* http://localhost:8080/characters -> swapi
+* http://localhost:8080/movies -> mongoDB
