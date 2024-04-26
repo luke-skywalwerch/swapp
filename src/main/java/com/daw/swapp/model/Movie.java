@@ -79,7 +79,7 @@ public class Movie {
             this.name = name;
         }
 
-        public String getNationallity(String nationallity) {
+        public String getNationallity() {
             return nationallity;
         }
 
