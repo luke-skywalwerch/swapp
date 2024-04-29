@@ -7,4 +7,9 @@ import com.daw.swapp.model.Movie;
 
 public interface MovieRepository extends MongoRepository<Movie, String> {
     List<Movie> findByDetailsDirectorNameContainingIgnoreCase(String directorName);
+
+    List<Movie> findByDurationBetween(int minDuration, int maxDuration);
+
+    List<Movie> findByDetailsDirectorNameContainingIgnoreCaseAndDurationBetween(
+            String directorName, Integer minDuration, Integer maxDuration);
 }
