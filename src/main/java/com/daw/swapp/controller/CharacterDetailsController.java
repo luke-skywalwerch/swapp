@@ -15,18 +15,10 @@ public class CharacterDetailsController {
     @Autowired
     private CharacterService characterService;
 
-    // @GetMapping("/api/character/{id}")
-    // public CharacterDetails getCharacterDetails(@PathVariable String id) {
-    //     return characterService.getCharacterDetails(id).getProperties();
-    // }
-
     @GetMapping("/api/character/{id}")
     public ResponseEntity<CharacterDetails> getCharacterDetails(@PathVariable String id) {
-        try {
-            CharacterDetails charDetails = characterService.getCharacterDetails(id).getProperties();
-            return ResponseEntity.ok(charDetails);
-        } catch (Exception e) {
-            return ResponseEntity.internalServerError().build();
-        }
+        CharacterDetails charDetails = characterService.getCharacterDetails(id).getProperties();
+        return ResponseEntity.ok(charDetails);
+
     }
 }
