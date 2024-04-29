@@ -24,9 +24,21 @@ public class MoviesController {
     private MoviesService moviesService;
 
     @GetMapping("/movies")
-    public String showMovies(@RequestParam(defaultValue = "") String director, Model model) {
-        List<Movie> movies = moviesService.ListMovies(director);
+    public String showMovies(@RequestParam(required = false) String director,
+            @RequestParam(required = false) Integer minDuration,
+            @RequestParam(required = false) Integer maxDuration,
+            Model model) {
+        List<Movie> movies = moviesService.listMoviesByQuery(director, minDuration, maxDuration);
         model.addAttribute("movies", movies);
+        if (director != null && !director.isEmpty()) {
+            model.addAttribute("director", director);
+        }
+        if (minDuration != null) {
+            model.addAttribute("minDuration", minDuration);
+        }
+        if (maxDuration != null) {
+            model.addAttribute("maxDuration", maxDuration);
+        }
         return "movies";
     }
 

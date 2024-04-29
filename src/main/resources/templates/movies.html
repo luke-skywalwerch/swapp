@@ -13,13 +13,19 @@
     <div class="searchBar">
         <a href="/movies/add" class="button">Add Movie</a>
         <div class="search">
-            <input type="text" id="directorInput" placeholder="Search by director name" />
+            <input type="text" id="directorInput" placeholder="Director name"
+                th:value="${director != null ? director : ''}" />
+            <input type="number" id="minDurationInput" min="0" placeholder="Min duration"
+                th:value="${minDuration != null ? minDuration : ''}" />
+            <input type="number" id="maxDurationInput" min="0" placeholder="Max duration"
+                th:value="${maxDuration != null ? maxDuration : ''}" />
             <button class="searchMovies" onclick="searchMovies()">Search</button>
         </div>
     </div>
     <ul id="moviesList">
         <li th:each="movie : ${movies}">
-            <h2 th:class="${movie.title == null ? 'nullTitle' : ''}" th:text="${movie.title ?: 'No title set'}">Movie title</h2>
+            <h2 th:class="${movie.title == null ? 'nullTitle' : ''}" th:text="${movie.title ?: 'No title set'}">Movie
+                title</h2>
             <p th:text="'Director: ' + ${movie.details?.director?.name}">Director</p>
             <p th:text="'Duración: ' + ${movie.duration} + ' minutos'">Duration</p>
     </ul>
