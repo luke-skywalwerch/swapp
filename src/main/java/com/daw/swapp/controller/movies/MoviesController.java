@@ -1,4 +1,4 @@
-package com.daw.swapp.controller;
+package com.daw.swapp.controller.movies;
 
 import java.util.List;
 
@@ -8,9 +8,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.daw.swapp.model.AddMovieRequest;
-import com.daw.swapp.model.Movie;
-import com.daw.swapp.service.MoviesService;
+import com.daw.swapp.model.movies.AddMovieRequest;
+import com.daw.swapp.model.movies.Movie;
+import com.daw.swapp.service.movies.MoviesService;
 
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;

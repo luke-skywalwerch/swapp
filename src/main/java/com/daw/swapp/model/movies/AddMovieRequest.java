@@ -1,4 +1,4 @@
-package com.daw.swapp.model;
+package com.daw.swapp.model.movies;
 
 public class AddMovieRequest {
     private String movieInfo;

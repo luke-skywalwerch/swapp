@@ -28,7 +28,6 @@ function fetchCharacterDetails(id, detailsDiv) {
     fetch('/api/character/' + id)
         .then(response => response.json())
         .then(data => {
-            debugger;
             detailsDiv.innerHTML = `
                 <p>Height: ${data.height}</p>
                 <p>Mass: ${data.mass}</p>
