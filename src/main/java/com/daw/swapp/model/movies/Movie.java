@@ -1,4 +1,4 @@
-package com.daw.swapp.model;
+package com.daw.swapp.model.movies;
 
 import java.util.List;
 

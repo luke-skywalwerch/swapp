@@ -1,4 +1,4 @@
-package com.daw.swapp.service;
+package com.daw.swapp.service.movies;
 
 import java.util.List;
 import java.util.Optional;
@@ -10,9 +10,9 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
 
-import com.daw.swapp.model.AddMovieRequest;
-import com.daw.swapp.model.Movie;
-import com.daw.swapp.repository.MovieRepository;
+import com.daw.swapp.model.movies.AddMovieRequest;
+import com.daw.swapp.model.movies.Movie;
+import com.daw.swapp.repository.movies.MovieRepository; 
 
 @Service
 public class MoviesService {

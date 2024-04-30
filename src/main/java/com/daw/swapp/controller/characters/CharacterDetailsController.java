@@ -1,4 +1,4 @@
-package com.daw.swapp.controller;
+package com.daw.swapp.controller.characters;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.daw.swapp.model.CharacterDetails;
-import com.daw.swapp.service.CharacterService;
+import com.daw.swapp.model.characters.CharacterDetails;
+import com.daw.swapp.service.characters.CharacterService;
 
 @RestController
 public class CharacterDetailsController {
