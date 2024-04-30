@@ -1,9 +1,10 @@
-package com.daw.swapp.repository;
+package com.daw.swapp.repository.movies;
 
 import java.util.List;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
-import com.daw.swapp.model.Movie;
+
+import com.daw.swapp.model.movies.Movie;
 
 public interface MovieRepository extends MongoRepository<Movie, String> {
     List<Movie> findByDetailsDirectorNameContainingIgnoreCase(String directorName);

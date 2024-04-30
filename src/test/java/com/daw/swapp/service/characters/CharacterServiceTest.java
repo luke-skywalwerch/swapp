@@ -1,4 +1,4 @@
-package com.daw.swapp.service;
+package com.daw.swapp.service.characters;
 
 import static org.mockito.Mockito.*;
 import static org.junit.jupiter.api.Assertions.*;
@@ -10,8 +10,8 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.web.client.RestTemplate;
 
-import com.daw.swapp.model.CharacterDetailsResponse;
-import com.daw.swapp.model.CharacterResponse;
+import com.daw.swapp.model.characters.CharacterDetailsResponse;
+import com.daw.swapp.model.characters.CharacterResponse;
 
 @ExtendWith(MockitoExtension.class)
 public class CharacterServiceTest {

@@ -1,10 +1,10 @@
-package com.daw.swapp.service;
+package com.daw.swapp.service.characters;
 
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import com.daw.swapp.model.CharacterDetailsResponse;
-import com.daw.swapp.model.CharacterResponse;
+import com.daw.swapp.model.characters.CharacterDetailsResponse;
+import com.daw.swapp.model.characters.CharacterResponse;
 
 @Service
 public class CharacterService {

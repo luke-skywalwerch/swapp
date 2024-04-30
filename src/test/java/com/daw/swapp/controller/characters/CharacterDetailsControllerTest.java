@@ -1,4 +1,4 @@
-package com.daw.swapp.controller;
+package com.daw.swapp.controller.characters;
 
 import static org.mockito.Mockito.*;
 import static org.junit.jupiter.api.Assertions.*;
@@ -11,10 +11,11 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
-import com.daw.swapp.model.CharacterDetails;
-import com.daw.swapp.model.CharacterDetailsResponse;
-import com.daw.swapp.model.CharacterDetailsResponse.CharacterDetailsResult;
-import com.daw.swapp.service.CharacterService;
+import com.daw.swapp.controller.characters.CharacterDetailsController;
+import com.daw.swapp.model.characters.CharacterDetails;
+import com.daw.swapp.model.characters.CharacterDetailsResponse;
+import com.daw.swapp.model.characters.CharacterDetailsResponse.CharacterDetailsResult;
+import com.daw.swapp.service.characters.CharacterService;
 
 @ExtendWith(MockitoExtension.class)
 public class CharacterDetailsControllerTest {

@@ -1,4 +1,4 @@
-package com.daw.swapp.controller;
+package com.daw.swapp.controller.characters;
 
 import static org.mockito.Mockito.*;
 import static org.junit.jupiter.api.Assertions.*;
@@ -10,8 +10,9 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.ui.Model;
 
-import com.daw.swapp.model.CharacterResponse;
-import com.daw.swapp.service.CharacterService;
+import com.daw.swapp.controller.characters.CharacterController;
+import com.daw.swapp.model.characters.CharacterResponse;
+import com.daw.swapp.service.characters.CharacterService;
 
 @ExtendWith(MockitoExtension.class)
 public class CharacterControllerTest {
@@ -33,7 +34,7 @@ public class CharacterControllerTest {
 
         String viewName = characterController.showCharacters(page, model);
 
-        assertEquals("characters", viewName);
+        assertEquals("characters/home", viewName);
         verify(model).addAttribute("characters", expectedCharacters.getResults());
         verify(characterService).listCharacters(anyInt());
     }
