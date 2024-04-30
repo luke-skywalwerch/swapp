@@ -18,7 +18,7 @@ public class CharacterService {
     public CharacterResponse listCharacters(int pageNumber) {
         String url = String.format("https://www.swapi.tech/api/people?page=%s&limit=10", pageNumber);
         return restTemplate.getForObject(url, CharacterResponse.class);
-    }
+    }//
 
     public CharacterDetailsResponse getCharacterDetails(String id) {
         String url = "https://www.swapi.tech/api/people/" + id;
