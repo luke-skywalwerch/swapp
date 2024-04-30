@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Error</title>
-    <link rel="stylesheet" th:href="@{/css/styles.css}" type="text/css">
+    <link rel="stylesheet" th:href="@{/css/baseStyles.css}">
+    <link rel="stylesheet" th:href="@{/css/error/styles.css}">
 </head>
 
 <body>
     <div class="error-container">
-        <h1>Nope</h1>
+        <h1>Nope.</h1>
         <span th:text="${errorMessage}"></span>
     </div>
     <a href="/characters">Home</a>

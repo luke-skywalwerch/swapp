@@ -39,12 +39,12 @@ public class MoviesController {
         if (maxDuration != null) {
             model.addAttribute("maxDuration", maxDuration);
         }
-        return "movies";
+        return "movies/home";
     }
 
     @GetMapping("/movies/add")
     public String showAddMovieForm() {
-        return "addMovie";
+        return "movies/addMovie";
     }
 
     @PostMapping("/movies/add")

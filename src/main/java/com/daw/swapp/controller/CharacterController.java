@@ -19,6 +19,6 @@ public class CharacterController {
     public String showCharacters(@RequestParam(defaultValue = "1") int page, Model model) {
         CharacterResponse characters = characterService.listCharacters(page);
         model.addAttribute("characters", characters.getResults());
-        return "characters";
+        return "characters/home";
     }
 }
