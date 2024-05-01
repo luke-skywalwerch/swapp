@@ -10,7 +10,7 @@ public class Movie {
     @Id
     private String id;
     private String title;
-    private List<String> actors;//
+    private List<String> actors;
     private int duration;
     private Details details;
 
