@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class CustomErrorController implements org.springframework.boot.web.servlet.error.ErrorController {
 
-    @GetMapping("/error")
+    @GetMapping("/error")//
     public String handleError() {
         return "/error";
     }
