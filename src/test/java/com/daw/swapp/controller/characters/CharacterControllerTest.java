@@ -34,7 +34,7 @@ public class CharacterControllerTest {
 
         String viewName = characterController.showCharacters(page, model);
 
-        assertEquals("characters/home", viewName);
+        assertEquals("characters/homes", viewName);
         verify(model).addAttribute("characters", expectedCharacters.getResults());
         verify(characterService).listCharacters(anyInt());
     }
