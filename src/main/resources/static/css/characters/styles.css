@@ -13,9 +13,6 @@ li {
 a {
     color: #ffcc00;
     text-decoration: none;
-    background-color: red;
-    background-color: yellow;
-    border: 10px solid black;
 }
 
 a:hover {
