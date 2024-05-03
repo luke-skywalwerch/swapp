@@ -13,7 +13,9 @@ li {
 a {
     color: #ffcc00;
     text-decoration: none;
-    background-color: rebeccapurple;
+    background-color: #444;
+  
+ 
 }
 
 a:hover {
