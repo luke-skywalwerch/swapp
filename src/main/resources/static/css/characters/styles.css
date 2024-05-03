@@ -13,6 +13,7 @@ li {
 a {
     color: #ffcc00;
     text-decoration: none;
+    border: 10px solid black;
 }
 
 a:hover {
