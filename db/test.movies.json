@@ -1,571 +1,593 @@
-[{
-  "_id": {
-    "$oid": "66279854add980a341b03025"
-  },
-  "titulo": "Inception",
-  "actores": [
-    "Leonardo DiCaprio",
-    "Ellen Page",
-    "Joseph Gordon-Levitt"
-  ],
-  "duracion": 148,
-  "detalles": {
-    "director": {
-      "nombre": "Christopher Nolan",
-      "nacionalidad": "Británico"
+[
+  {
+    "_id": {
+      "$oid": "6629061d81892b3eb310e8f0"
     },
-    "año": 2010
+    "title": "Inception",
+    "actors": [
+      "Leonardo DiCaprio",
+      "Ellen Page",
+      "Joseph Gordon-Levitt"
+    ],
+    "duration": 148,
+    "details": {
+      "director": {
+        "name": "Christopher Nolan",
+        "nationality": "British"
+      },
+      "year": 2010
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6629061d81892b3eb310e8f1"
+    },
+    "title": "The Matrix",
+    "actors": [
+      "Keanu Reeves",
+      "Laurence Fishburne",
+      "Carrie-Anne Moss"
+    ],
+    "duration": 136,
+    "details": {
+      "director": {
+        "name": "Lana Wachowski",
+        "nationality": "American"
+      },
+      "year": 1999
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6629061d81892b3eb310e8f2"
+    },
+    "title": "Gladiator",
+    "actors": [
+      "Russell Crowe",
+      "Joaquin Phoenix",
+      "Connie Nielsen"
+    ],
+    "duration": 155,
+    "details": {
+      "director": {
+        "name": "Ridley Scott",
+        "nationality": "British"
+      },
+      "year": 2000
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6629061d81892b3eb310e8f3"
+    },
+    "title": "Interstellar",
+    "actors": [
+      "Matthew McConaughey",
+      "Anne Hathaway",
+      "Jessica Chastain"
+    ],
+    "duration": 169,
+    "details": {
+      "director": {
+        "name": "Christopher Nolan",
+        "nationality": "British"
+      },
+      "year": 2014
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6629061d81892b3eb310e8f4"
+    },
+    "title": "Parasite",
+    "actors": [
+      "Song Kang-ho",
+      "Lee Sun-kyun",
+      "Cho Yeo-jeong"
+    ],
+    "duration": 132,
+    "details": {
+      "director": {
+        "name": "Bong Joon-ho",
+        "nationality": "South Korean"
+      },
+      "year": 2019
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6629061d81892b3eb310e8f5"
+    },
+    "title": "Avatar",
+    "actors": [
+      "Sam Worthington",
+      "Zoe Saldana",
+      "Sigourney Weaver"
+    ],
+    "duration": 162,
+    "details": {
+      "director": {
+        "name": "James Cameron",
+        "nationality": "Canadian"
+      },
+      "year": 2009
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6629061d81892b3eb310e8f6"
+    },
+    "title": "The Godfather",
+    "actors": [
+      "Marlon Brando",
+      "Al Pacino",
+      "James Caan"
+    ],
+    "duration": 175,
+    "details": {
+      "director": {
+        "name": "Francis Ford Coppola",
+        "nationality": "American"
+      },
+      "year": 1972
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6629061d81892b3eb310e8f7"
+    },
+    "title": "Pulp Fiction",
+    "actors": [
+      "John Travolta",
+      "Uma Thurman",
+      "Samuel L. Jackson"
+    ],
+    "duration": 154,
+    "details": {
+      "director": {
+        "name": "Quentin Tarantino",
+        "nationality": "American"
+      },
+      "year": 1994
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6629061d81892b3eb310e8f8"
+    },
+    "title": "The Shawshank Redemption",
+    "actors": [
+      "Tim Robbins",
+      "Morgan Freeman",
+      "Bob Gunton"
+    ],
+    "duration": 142,
+    "details": {
+      "director": {
+        "name": "Frank Darabont",
+        "nationality": "American"
+      },
+      "year": 1994
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6629061d81892b3eb310e8f9"
+    },
+    "title": "Forrest Gump",
+    "actors": [
+      "Tom Hanks",
+      "Robin Wright",
+      "Gary Sinise"
+    ],
+    "duration": 142,
+    "details": {
+      "director": {
+        "name": "Robert Zemeckis",
+        "nationality": "American"
+      },
+      "year": 1994
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6629064581892b3eb310e8fb"
+    },
+    "title": "Dunkirk",
+    "actors": [
+      "Tom Hardy",
+      "Kenneth Branagh",
+      "Mark Rylance"
+    ],
+    "duration": 106,
+    "details": {
+      "director": {
+        "name": "Christopher Nolan",
+        "nationality": "British"
+      },
+      "year": 2017
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6629064581892b3eb310e8fc"
+    },
+    "title": "The Revenant",
+    "actors": [
+      "Leonardo DiCaprio",
+      "Tom Hardy",
+      "Domhnall Gleeson"
+    ],
+    "duration": 156,
+    "details": {
+      "director": {
+        "name": "Alejandro González Iñárritu",
+        "nationality": "Mexican"
+      },
+      "year": 2015
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6629064581892b3eb310e8fd"
+    },
+    "title": "The Dark Knight",
+    "actors": [
+      "Christian Bale",
+      "Heath Ledger",
+      "Aaron Eckhart"
+    ],
+    "duration": 152,
+    "details": {
+      "director": {
+        "name": "Christopher Nolan",
+        "nationality": "British"
+      },
+      "year": 2008
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6629064581892b3eb310e8fe"
+    },
+    "title": "Catch Me If You Can",
+    "actors": [
+      "Leonardo DiCaprio",
+      "Tom Hanks",
+      "Christopher Walken"
+    ],
+    "duration": 141,
+    "details": {
+      "director": {
+        "name": "Steven Spielberg",
+        "nationality": "American"
+      },
+      "year": 2002
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6629064581892b3eb310e8ff"
+    },
+    "title": "Titanic",
+    "actors": [
+      "Leonardo DiCaprio",
+      "Kate Winslet",
+      "Billy Zane"
+    ],
+    "duration": 195,
+    "details": {
+      "director": {
+        "name": "James Cameron",
+        "nationality": "Canadian"
+      },
+      "year": 1997
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6629064581892b3eb310e900"
+    },
+    "title": "Mad Max: Fury Road",
+    "actors": [
+      "Tom Hardy",
+      "Charlize Theron",
+      "Nicholas Hoult"
+    ],
+    "duration": 120,
+    "details": {
+      "director": {
+        "name": "George Miller",
+        "nationality": "Australian"
+      },
+      "year": 2015
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6629064581892b3eb310e901"
+    },
+    "title": "True Grit",
+    "actors": [
+      "Jeff Bridges",
+      "Matt Damon",
+      "Hailee Steinfeld"
+    ],
+    "duration": 110,
+    "details": {
+      "director": {
+        "name": "Joel Coen",
+        "nationality": "American"
+      },
+      "year": 2010
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6629064581892b3eb310e902"
+    },
+    "title": "Saving Private Ryan",
+    "actors": [
+      "Tom Hanks",
+      "Matt Damon",
+      "Vin Diesel"
+    ],
+    "duration": 169,
+    "details": {
+      "director": {
+        "name": "Steven Spielberg",
+        "nationality": "American"
+      },
+      "year": 1998
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6629064581892b3eb310e903"
+    },
+    "title": "Avatar: The Way of Water",
+    "actors": [
+      "Sam Worthington",
+      "Zoe Saldana",
+      "Sigourney Weaver"
+    ],
+    "duration": 192,
+    "details": {
+      "director": {
+        "name": "James Cameron",
+        "nationality": "Canadian"
+      },
+      "year": 2022
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6629068681892b3eb310e905"
+    },
+    "title": "Inglourious Basterds",
+    "actors": [
+      "Brad Pitt",
+      "Christoph Waltz",
+      "Michael Fassbender",
+      "Eli Roth"
+    ],
+    "duration": 153,
+    "details": {
+      "director": {
+        "name": "Quentin Tarantino",
+        "nationality": "American"
+      },
+      "year": 2009
+    },
+    "genre": "Action"
+  },
+  {
+    "_id": {
+      "$oid": "6629068681892b3eb310e906"
+    },
+    "title": "The Prestige",
+    "actors": [
+      "Christian Bale",
+      "Hugh Jackman",
+      "Scarlett Johansson",
+      "Michael Caine"
+    ],
+    "duration": 130,
+    "details": {
+      "director": {
+        "name": "Christopher Nolan",
+        "nationality": "British"
+      },
+      "year": 2006
+    },
+    "genre": "Drama"
+  },
+  {
+    "_id": {
+      "$oid": "6629068681892b3eb310e907"
+    },
+    "title": "The Departed",
+    "actors": [
+      "Leonardo DiCaprio",
+      "Matt Damon",
+      "Jack Nicholson",
+      "Mark Wahlberg"
+    ],
+    "duration": 151,
+    "details": {
+      "director": {
+        "name": "Martin Scorsese",
+        "nationality": "American"
+      },
+      "year": 2006
+    },
+    "genre": "Crime"
+  },
+  {
+    "_id": {
+      "$oid": "6629068681892b3eb310e908"
+    },
+    "title": "Blade Runner 2049",
+    "actors": [
+      "Ryan Gosling",
+      "Harrison Ford",
+      "Ana de Armas",
+      "Jared Leto"
+    ],
+    "duration": 164,
+    "details": {
+      "director": {
+        "name": "Denis Villeneuve",
+        "nationality": "Canadian"
+      },
+      "year": 2017
+    },
+    "genre": "Sci-Fi"
+  },
+  {
+    "_id": {
+      "$oid": "6629068681892b3eb310e909"
+    },
+    "title": "Aliens",
+    "actors": [
+      "Sigourney Weaver",
+      "Bill Paxton",
+      "Lance Henriksen",
+      "Michael Biehn"
+    ],
+    "duration": 137,
+    "details": {
+      "director": {
+        "name": "James Cameron",
+        "nationality": "Canadian"
+      },
+      "year": 1986
+    },
+    "genre": "Sci-Fi"
+  },
+  {
+    "_id": {
+      "$oid": "6629068681892b3eb310e90a"
+    },
+    "title": "Blood Diamond",
+    "actors": [
+      "Leonardo DiCaprio",
+      "Djimon Hounsou",
+      "Jennifer Connelly",
+      "Arnold Vosloo"
+    ],
+    "duration": 143,
+    "details": {
+      "director": {
+        "name": "Edward Zwick",
+        "nationality": "American"
+      },
+      "year": 2006
+    },
+    "genre": "Drama"
+  },
+  {
+    "_id": {
+      "$oid": "6629068681892b3eb310e90b"
+    },
+    "title": "Fury",
+    "actors": [
+      "Brad Pitt",
+      "Shia LaBeouf",
+      "Logan Lerman",
+      "Michael Peña"
+    ],
+    "duration": 134,
+    "details": {
+      "director": {
+        "name": "David Ayer",
+        "nationality": "American"
+      },
+      "year": 2014
+    },
+    "genre": "War"
+  },
+  {
+    "_id": {
+      "$oid": "6629068681892b3eb310e90c"
+    },
+    "title": "The Martian",
+    "actors": [
+      "Matt Damon",
+      "Jessica Chastain",
+      "Kristen Wiig",
+      "Jeff Daniels"
+    ],
+    "duration": 144,
+    "details": {
+      "director": {
+        "name": "Ridley Scott",
+        "nationality": "British"
+      },
+      "year": 2015
+    },
+    "genre": "Sci-Fi"
+  },
+  {
+    "_id": {
+      "$oid": "6629068681892b3eb310e90d"
+    },
+    "title": "Edge of Tomorrow",
+    "actors": [
+      "Tom Cruise",
+      "Emily Blunt",
+      "Bill Paxton",
+      "Brendan Gleeson"
+    ],
+    "duration": 113,
+    "details": {
+      "director": {
+        "name": "Doug Liman",
+        "nationality": "American"
+      },
+      "year": 2014
+    },
+    "genre": "Sci-Fi"
+  },
+  {
+    "_id": {
+      "$oid": "6629068681892b3eb310e90e"
+    },
+    "title": "Sherlock Holmes",
+    "actors": [
+      "Robert Downey Jr.",
+      "Jude Law",
+      "Rachel McAdams",
+      "Mark Strong"
+    ],
+    "duration": 128,
+    "details": {
+      "director": {
+        "name": "Guy Ritchie",
+        "nationality": "British"
+      },
+      "year": 2009
+    },
+    "genre": "Action"
+  },
+  {
+    "_id": {
+      "$oid": "66309e8b46c93b5aba498c99"
+    },
+    "title": "Poor Things",
+    "actors": [
+      "Emma Stone",
+      "Mark Ruffalo",
+      "Willem Dafoe"
+    ],
+    "duration": 142,
+    "details": {
+      "director": {
+        "name": "Yorgos Lanthimos",
+        "nationality": "Greek"
+      },
+      "year": 2023
+    },
+    "genre": "Drama"
   }
-},
-{
-  "_id": {
-    "$oid": "66279854add980a341b03026"
-  },
-  "titulo": "The Matrix",
-  "actores": [
-    "Keanu Reeves",
-    "Laurence Fishburne",
-    "Carrie-Anne Moss"
-  ],
-  "duracion": 136,
-  "detalles": {
-    "director": {
-      "nombre": "Lana Wachowski",
-      "nacionalidad": "Americana"
-    },
-    "año": 1999
-  }
-},
-{
-  "_id": {
-    "$oid": "66279854add980a341b03027"
-  },
-  "titulo": "Gladiator",
-  "actores": [
-    "Russell Crowe",
-    "Joaquin Phoenix",
-    "Connie Nielsen"
-  ],
-  "duracion": 155,
-  "detalles": {
-    "director": {
-      "nombre": "Ridley Scott",
-      "nacionalidad": "Británico"
-    },
-    "año": 2000
-  }
-},
-{
-  "_id": {
-    "$oid": "66279854add980a341b03028"
-  },
-  "titulo": "Interstellar",
-  "actores": [
-    "Matthew McConaughey",
-    "Anne Hathaway",
-    "Jessica Chastain"
-  ],
-  "duracion": 169,
-  "detalles": {
-    "director": {
-      "nombre": "Christopher Nolan",
-      "nacionalidad": "Británico"
-    },
-    "año": 2014
-  }
-},
-{
-  "_id": {
-    "$oid": "66279854add980a341b03029"
-  },
-  "titulo": "Parasite",
-  "actores": [
-    "Song Kang-ho",
-    "Lee Sun-kyun",
-    "Cho Yeo-jeong"
-  ],
-  "duracion": 132,
-  "detalles": {
-    "director": {
-      "nombre": "Bong Joon-ho",
-      "nacionalidad": "Surcoreano"
-    },
-    "año": 2019
-  }
-},
-{
-  "_id": {
-    "$oid": "66279854add980a341b0302a"
-  },
-  "titulo": "Avatar",
-  "actores": [
-    "Sam Worthington",
-    "Zoe Saldana",
-    "Sigourney Weaver"
-  ],
-  "duracion": 162,
-  "detalles": {
-    "director": {
-      "nombre": "James Cameron",
-      "nacionalidad": "Canadiense"
-    },
-    "año": 2009
-  }
-},
-{
-  "_id": {
-    "$oid": "66279854add980a341b0302b"
-  },
-  "titulo": "The Godfather",
-  "actores": [
-    "Marlon Brando",
-    "Al Pacino",
-    "James Caan"
-  ],
-  "duracion": 175,
-  "detalles": {
-    "director": {
-      "nombre": "Francis Ford Coppola",
-      "nacionalidad": "Americano"
-    },
-    "año": 1972
-  }
-},
-{
-  "_id": {
-    "$oid": "66279854add980a341b0302c"
-  },
-  "titulo": "Pulp Fiction",
-  "actores": [
-    "John Travolta",
-    "Uma Thurman",
-    "Samuel L. Jackson"
-  ],
-  "duracion": 154,
-  "detalles": {
-    "director": {
-      "nombre": "Quentin Tarantino",
-      "nacionalidad": "Americano"
-    },
-    "año": 1994
-  }
-},
-{
-  "_id": {
-    "$oid": "66279854add980a341b0302d"
-  },
-  "titulo": "The Shawshank Redemption",
-  "actores": [
-    "Tim Robbins",
-    "Morgan Freeman",
-    "Bob Gunton"
-  ],
-  "duracion": 142,
-  "detalles": {
-    "director": {
-      "nombre": "Frank Darabont",
-      "nacionalidad": "Americano"
-    },
-    "año": 1994
-  }
-},
-{
-  "_id": {
-    "$oid": "66279854add980a341b0302e"
-  },
-  "titulo": "Forrest Gump",
-  "actores": [
-    "Tom Hanks",
-    "Robin Wright",
-    "Gary Sinise"
-  ],
-  "duracion": 142,
-  "detalles": {
-    "director": {
-      "nombre": "Robert Zemeckis",
-      "nacionalidad": "Americano"
-    },
-    "año": 1994
-  }
-},
-{
-  "_id": {
-    "$oid": "66279ad4add980a341b03030"
-  },
-  "titulo": "Dunkirk",
-  "actores": [
-    "Tom Hardy",
-    "Kenneth Branagh",
-    "Mark Rylance"
-  ],
-  "duracion": 106,
-  "detalles": {
-    "director": {
-      "nombre": "Christopher Nolan",
-      "nacionalidad": "Británico"
-    },
-    "año": 2017
-  }
-},
-{
-  "_id": {
-    "$oid": "66279ad4add980a341b03031"
-  },
-  "titulo": "The Revenant",
-  "actores": [
-    "Leonardo DiCaprio",
-    "Tom Hardy",
-    "Domhnall Gleeson"
-  ],
-  "duracion": 156,
-  "detalles": {
-    "director": {
-      "nombre": "Alejandro González Iñárritu",
-      "nacionalidad": "Mexicano"
-    },
-    "año": 2015
-  }
-},
-{
-  "_id": {
-    "$oid": "66279ad4add980a341b03032"
-  },
-  "titulo": "The Dark Knight",
-  "actores": [
-    "Christian Bale",
-    "Heath Ledger",
-    "Aaron Eckhart"
-  ],
-  "duracion": 152,
-  "detalles": {
-    "director": {
-      "nombre": "Christopher Nolan",
-      "nacionalidad": "Británico"
-    },
-    "año": 2008
-  }
-},
-{
-  "_id": {
-    "$oid": "66279ad4add980a341b03033"
-  },
-  "titulo": "Catch Me If You Can",
-  "actores": [
-    "Leonardo DiCaprio",
-    "Tom Hanks",
-    "Christopher Walken"
-  ],
-  "duracion": 141,
-  "detalles": {
-    "director": {
-      "nombre": "Steven Spielberg",
-      "nacionalidad": "Americano"
-    },
-    "año": 2002
-  }
-},
-{
-  "_id": {
-    "$oid": "66279ad4add980a341b03034"
-  },
-  "titulo": "Titanic",
-  "actores": [
-    "Leonardo DiCaprio",
-    "Kate Winslet",
-    "Billy Zane"
-  ],
-  "duracion": 195,
-  "detalles": {
-    "director": {
-      "nombre": "James Cameron",
-      "nacionalidad": "Canadiense"
-    },
-    "año": 1997
-  }
-},
-{
-  "_id": {
-    "$oid": "66279ad4add980a341b03035"
-  },
-  "titulo": "Mad Max: Fury Road",
-  "actores": [
-    "Tom Hardy",
-    "Charlize Theron",
-    "Nicholas Hoult"
-  ],
-  "duracion": 120,
-  "detalles": {
-    "director": {
-      "nombre": "George Miller",
-      "nacionalidad": "Australiano"
-    },
-    "año": 2015
-  }
-},
-{
-  "_id": {
-    "$oid": "66279ad4add980a341b03036"
-  },
-  "titulo": "True Grit",
-  "actores": [
-    "Jeff Bridges",
-    "Matt Damon",
-    "Hailee Steinfeld"
-  ],
-  "duracion": 110,
-  "detalles": {
-    "director": {
-      "nombre": "Joel Coen",
-      "nacionalidad": "Americano"
-    },
-    "año": 2010
-  }
-},
-{
-  "_id": {
-    "$oid": "66279ad4add980a341b03037"
-  },
-  "titulo": "Saving Private Ryan",
-  "actores": [
-    "Tom Hanks",
-    "Matt Damon",
-    "Vin Diesel"
-  ],
-  "duracion": 169,
-  "detalles": {
-    "director": {
-      "nombre": "Steven Spielberg",
-      "nacionalidad": "Americano"
-    },
-    "año": 1998
-  }
-},
-{
-  "_id": {
-    "$oid": "66279ad4add980a341b03038"
-  },
-  "titulo": "Avatar: The Way of Water",
-  "actores": [
-    "Sam Worthington",
-    "Zoe Saldana",
-    "Sigourney Weaver"
-  ],
-  "duracion": 192,
-  "detalles": {
-    "director": {
-      "nombre": "James Cameron",
-      "nacionalidad": "Canadiense"
-    },
-    "año": 2022
-  }
-},
-{
-  "_id": {
-    "$oid": "6628c18b81892b3eb310e8e4"
-  },
-  "titulo": "Inglourious Basterds",
-  "actores": [
-    "Brad Pitt",
-    "Christoph Waltz",
-    "Michael Fassbender",
-    "Eli Roth"
-  ],
-  "duracion": 153,
-  "detalles": {
-    "director": {
-      "nombre": "Quentin Tarantino",
-      "nacionalidad": "Americano"
-    },
-    "año": 2009
-  },
-  "género": "Acción"
-},
-{
-  "_id": {
-    "$oid": "6628c18b81892b3eb310e8e5"
-  },
-  "titulo": "The Prestige",
-  "actores": [
-    "Christian Bale",
-    "Hugh Jackman",
-    "Scarlett Johansson",
-    "Michael Caine"
-  ],
-  "duracion": 130,
-  "detalles": {
-    "director": {
-      "nombre": "Christopher Nolan",
-      "nacionalidad": "Británico"
-    },
-    "año": 2006
-  },
-  "género": "Drama"
-},
-{
-  "_id": {
-    "$oid": "6628c18b81892b3eb310e8e6"
-  },
-  "titulo": "The Departed",
-  "actores": [
-    "Leonardo DiCaprio",
-    "Matt Damon",
-    "Jack Nicholson",
-    "Mark Wahlberg"
-  ],
-  "duracion": 151,
-  "detalles": {
-    "director": {
-      "nombre": "Martin Scorsese",
-      "nacionalidad": "Americano"
-    },
-    "año": 2006
-  },
-  "género": "Crimen"
-},
-{
-  "_id": {
-    "$oid": "6628c18b81892b3eb310e8e7"
-  },
-  "titulo": "Blade Runner 2049",
-  "actores": [
-    "Ryan Gosling",
-    "Harrison Ford",
-    "Ana de Armas",
-    "Jared Leto"
-  ],
-  "duracion": 164,
-  "detalles": {
-    "director": {
-      "nombre": "Denis Villeneuve",
-      "nacionalidad": "Canadiense"
-    },
-    "año": 2017
-  },
-  "género": "Ciencia ficción"
-},
-{
-  "_id": {
-    "$oid": "6628c18b81892b3eb310e8e8"
-  },
-  "titulo": "Aliens",
-  "actores": [
-    "Sigourney Weaver",
-    "Bill Paxton",
-    "Lance Henriksen",
-    "Michael Biehn"
-  ],
-  "duracion": 137,
-  "detalles": {
-    "director": {
-      "nombre": "James Cameron",
-      "nacionalidad": "Canadiense"
-    },
-    "año": 1986
-  },
-  "género": "Ciencia ficción"
-},
-{
-  "_id": {
-    "$oid": "6628c18b81892b3eb310e8e9"
-  },
-  "titulo": "Blood Diamond",
-  "actores": [
-    "Leonardo DiCaprio",
-    "Djimon Hounsou",
-    "Jennifer Connelly",
-    "Arnold Vosloo"
-  ],
-  "duracion": 143,
-  "detalles": {
-    "director": {
-      "nombre": "Edward Zwick",
-      "nacionalidad": "Americano"
-    },
-    "año": 2006
-  },
-  "género": "Drama"
-},
-{
-  "_id": {
-    "$oid": "6628c18b81892b3eb310e8ea"
-  },
-  "titulo": "Fury",
-  "actores": [
-    "Brad Pitt",
-    "Shia LaBeouf",
-    "Logan Lerman",
-    "Michael Peña"
-  ],
-  "duracion": 134,
-  "detalles": {
-    "director": {
-      "nombre": "David Ayer",
-      "nacionalidad": "Americano"
-    },
-    "año": 2014
-  },
-  "género": "Guerra"
-},
-{
-  "_id": {
-    "$oid": "66279ad4add980a341b03040"
-  },
-  "titulo": "The Martian",
-  "actores": [
-    "Matt Damon",
-    "Jessica Chastain",
-    "Kristen Wiig",
-    "Jeff Daniels"
-  ],
-  "duracion": 144,
-  "detalles": {
-    "director": {
-      "nombre": "Ridley Scott",
-      "nacionalidad": "Británico"
-    },
-    "año": 2015
-  },
-  "género": "Ciencia ficción"
-},
-{
-  "_id": {
-    "$oid": "6628c18b81892b3eb310e8eb"
-  },
-  "titulo": "Edge of Tomorrow",
-  "actores": [
-    "Tom Cruise",
-    "Emily Blunt",
-    "Bill Paxton",
-    "Brendan Gleeson"
-  ],
-  "duracion": 113,
-  "detalles": {
-    "director": {
-      "nombre": "Doug Liman",
-      "nacionalidad": "Americano"
-    },
-    "año": 2014
-  },
-  "género": "Ciencia ficción"
-},
-{
-  "_id": {
-    "$oid": "6628c18b81892b3eb310e8ec"
-  },
-  "titulo": "Sherlock Holmes",
-  "actores": [
-    "Robert Downey Jr.",
-    "Jude Law",
-    "Rachel McAdams",
-    "Mark Strong"
-  ],
-  "duracion": 128,
-  "detalles": {
-    "director": {
-      "nombre": "Guy Ritchie",
-      "nacionalidad": "Británico"
-    },
-    "año": 2009
-  },
-  "género": "Acción"
-}]
+]

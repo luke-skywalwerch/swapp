@@ -15,11 +15,11 @@
         <a href="/movies/add" class="button">Add Movie</a>
         <div class="search">
             <input type="text" id="directorInput" placeholder="Director name"
-                th:value="${director != null ? director : ''}" />
+                th:value="${searchDirector != null ? searchDirector : ''}" />
             <input type="number" id="minDurationInput" min="0" placeholder="Min duration"
-                th:value="${minDuration != null ? minDuration : ''}" />
+                th:value="${searchMinDuration != null ? searchMinDuration : ''}" />
             <input type="number" id="maxDurationInput" min="0" placeholder="Max duration"
-                th:value="${maxDuration != null ? maxDuration : ''}" />
+                th:value="${searchMaxDuration != null ? searchMaxDuration : ''}" />
             <button class="searchMovies" onclick="searchMovies()">Search</button>
         </div>
     </div>
@@ -27,8 +27,8 @@
         <li th:each="movie : ${movies}">
             <h2 th:class="${movie.title == null ? 'nullTitle' : ''}" th:text="${movie.title ?: 'No title set'}">Movie
                 title</h2>
-            <p th:text="'Director: ' + ${movie.details?.director?.name}">Director</p>
-            <p th:text="'Duración: ' + ${movie.duration} + ' minutos'">Duration</p>
+            <p th:text="'Director: ' + ${movie.details?.director?.name}">No director set</p>
+            <p th:text="'Duración: ' + ${movie.duration} + ' minutos'">No duration set</p>
     </ul>
     </ul>
 </body>
