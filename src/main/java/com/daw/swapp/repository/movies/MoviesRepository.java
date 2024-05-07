@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import com.daw.swapp.model.movies.Movie;
 
-public interface MovieRepository extends MongoRepository<Movie, String> {
+public interface MoviesRepository extends MongoRepository<Movie, String> {
     List<Movie> findByDetailsDirectorNameContainingIgnoreCase(String directorName);
 
     List<Movie> findByDurationBetween(int minDuration, int maxDuration);

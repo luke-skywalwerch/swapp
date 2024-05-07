@@ -29,16 +29,8 @@ public class MoviesController {
             @RequestParam(required = false) Integer maxDuration,
             Model model) {
         List<Movie> movies = moviesService.listMoviesByQuery(director, minDuration, maxDuration);
-        model.addAttribute("movies", movies);
-        if (director != null && !director.isEmpty()) {
-            model.addAttribute("director", director);
-        }
-        if (minDuration != null) {
-            model.addAttribute("minDuration", minDuration);
-        }
-        if (maxDuration != null) {
-            model.addAttribute("maxDuration", maxDuration);
-        }
+        moviesService.setMovieModel(model, movies, director, minDuration, maxDuration);
+
         return "movies/home";
     }
 
@@ -48,7 +40,7 @@ public class MoviesController {
     }
 
     @PostMapping("/movies/add")
-    public ResponseEntity<?> addMovie(@RequestBody AddMovieRequest movieRequest) {
+    public ResponseEntity<Object> addMovie(@RequestBody AddMovieRequest movieRequest) {
         try {
             return ResponseEntity.ok(moviesService.addMovie(movieRequest));
         } catch (Exception e) {

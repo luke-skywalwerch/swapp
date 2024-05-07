@@ -9,16 +9,17 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
+import org.springframework.ui.Model;
 
 import com.daw.swapp.model.movies.AddMovieRequest;
 import com.daw.swapp.model.movies.Movie;
-import com.daw.swapp.repository.movies.MovieRepository; 
+import com.daw.swapp.repository.movies.MoviesRepository;
 
 @Service
 public class MoviesService {
 
     @Autowired
-    private MovieRepository movieRepository;
+    private MoviesRepository movieRepository;
 
     @Autowired
     private MongoTemplate mongoTemplate;
@@ -70,5 +71,19 @@ public class MoviesService {
     public Document addMovie(AddMovieRequest movieRequest) {
         Document document = Document.parse(movieRequest.getMovieInfo());
         return mongoTemplate.insert(document, "movies");
+    }
+
+    public void setMovieModel(Model model, List<Movie> movies, String director, Integer minDuration,
+            Integer maxDuration) {
+        model.addAttribute("movies", movies);
+        if (director != null && !director.isEmpty()) {
+            model.addAttribute("searchDirector", director);
+        }
+        if (minDuration != null) {
+            model.addAttribute("searchMinDuration", minDuration);
+        }
+        if (maxDuration != null) {
+            model.addAttribute("searchMaxDuration", maxDuration);
+        }
     }
 }

@@ -1,0 +1,64 @@
+--------------------------------------Basics---------------------------------------
+<!-- thymeleaf reads variables defined in model accessing them with ${name}-->
+<!-- thymeleaf properties are defined with the prefix "th:" -->
+<!-- th:text is used to set the text inside a tag, note that it replaces any text that is defined in the template -->
+<span th:text="${name}">This text will be replaced with the value of "name" unless if name is null</span>
+
+<!-- add classes to an element with th:classappend, it will add it to the current classes -->
+<div th:classappend="${condition ? 'visible' : 'hidden'}" class="someClass">Some text</div>
+
+<!-- create dynamic custom properties to a tag to make them easily accessible from javascript -->
+<!-- the name can be changed, it is standard to use prefix "data-" for custom properties -->
+<div th:data-name="${name}" class="someClass">Some text</div>
+
+
+--------------------------------------Conditional rendering---------------------------------------
+<!-- simple conditional tag, it would only be shown if user.isAdmin is true -->
+<div th:if="${user.isAdmin}">Admin content, this won't be rendered if isAdmin=false</div>
+<!-- inside the braces {} code fragments can be used, for example to create conditions -->
+<!-- common case, to show a tag if a property exists -->
+<div th:if="${user != null}">Here you can do something with the "user" property in a safely way</div>
+
+
+--------------------------------------Conditional rendering example explained---------------------------------------
+<!-- "character" is the model object which content is set in controller, it is defined as an object with name, surname and uid-->
+
+<body>
+    <h1>Character Information</h1>
+    <!-- verify that the object "character" exists -->
+    <div th:if="${character != null}">
+        <!-- access each of "character" properties to show them -->
+        <p><strong>Name:</strong> <span th:text="${character.name}">Default Name</span></p>
+        <p><strong>Surname:</strong> <span th:text="${character.surname}">Default Surname</span></p>
+        <p><strong>Uid:</strong> <span th:text="${character.uid}">Default uid</span></p>
+    </div>
+    <!-- inverse expression of "if" to control the character=null, it would be the same as th:if=${character == null} -->
+    <div th:unless="${character != null}">
+        <p>Character information is not available.</p>
+    </div>
+</body>
+
+--------------------------------------Dynamic rendering---------------------------------------
+<!-- simple loop, it iterates over "items" creating an <li></li> for each "item" with its name as text -->
+<ul>
+    <li th:each="item : ${items}" th:text="${item.name}">Item</li>
+</ul>
+
+
+--------------------------------------Dynamic rendering example explained---------------------------------------
+<!-- dynamic list code from characters.html-->
+<!-- "characters" is the model object which content is set in controller, it is defined as a List<Character> -->
+<ul>
+    <!-- th:each inside an html tag creates one instance of the tag itself and all its child elements -->
+    <!-- it also creates a "character" variable for each array element in "characters" -->
+    <li th:each="character : ${characters}">
+
+        <!-- inside the loop, we can access each "character" with the thymeleaf syntax -->
+        <!-- th:data-uid creates a custom property in the element which later can be accessible from javascript -->
+        <a href="javascript:void(0)" class="character-link" th:data-uid="${character.uid}">
+            <span th:text="${character.name}"></span>
+        </a>
+        <!-- concatenate the id to the id set with th:id to create a unic but accessible element id -->
+        <div class="character-details" th:id="'character-details-' + ${character.uid}"></div>
+    </li>
+</ul>

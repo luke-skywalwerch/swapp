@@ -5,8 +5,10 @@ Evergrowing, improvable MVC learning project using
 * Spring Boot
 * Api calls to swapi: https://www.swapi.tech/
 * MongoDB local access
+* Sql local access
 * ...
 # run
 ./mvnw spring-boot:run <br>
 * http://localhost:8080/characters -> swapi
 * http://localhost:8080/movies -> mongoDB
+* http://localhost:8080/users -> sql

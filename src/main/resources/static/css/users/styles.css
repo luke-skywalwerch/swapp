@@ -1,0 +1,64 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #444;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+span {
+    color: #ffcc00;
+}
+
+form {
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+
+    .formRow:not(:first-of-type) {
+        margin-top: 20px;
+    }
+}
+
+input[type="text"],
+input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+}
+
+input[type="submit"] {
+    background-color: #444;
+    color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.delete-button {
+    color: grey;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.delete-button:hover {
+    color: lightgray;
+}
