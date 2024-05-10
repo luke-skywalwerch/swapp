@@ -16,8 +16,10 @@ import com.daw.swapp.model.users.User;
 @Repository
 public class UsersRepository {
     private static final String URL = "jdbc:sqlserver://localhost:1433;databaseName=swapp;encrypt=true;trustServerCertificate=true";
-    private static final String USERNAME = "sa";
-    private static final String PASSWORD = "PasswordO1.@";
+    // private static final String USERNAME = "sa";
+    // private static final String PASSWORD = "PasswordO1.@";
+    private static final String USERNAME = "swappDev";
+    private static final String PASSWORD = "123456789a@";
 
     public List<User> getAllUsers() {
         List<User> users = new ArrayList<User>();
