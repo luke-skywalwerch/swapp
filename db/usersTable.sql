@@ -29,5 +29,31 @@ ALTER TABLE [dbo].[Users] ADD  CONSTRAINT [PK_NewTable] PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 GO
 
+-- Crear el login para el usuario 'swappDev' si no existe
+IF NOT EXISTS (SELECT * FROM master.sys.server_principals WHERE name = N'swappDev')
+BEGIN
+    CREATE LOGIN swappDev WITH PASSWORD = N'123456789a@', CHECK_POLICY = OFF;
+END
+GO
 
+-- Crear el usuario 'swappDev' para la base de datos 'swapp'
+USE swapp;
+GO
+IF NOT EXISTS (SELECT * FROM sys.database_principals WHERE name = N'swappDev')
+BEGIN
+    CREATE USER swappDev FOR LOGIN swappDev;
+    -- Otorgar permisos de administrador (db_owner) en la base de datos 'swapp'
+    EXEC sp_addrolemember 'db_owner', 'swappDev';
+END
+GO
+
+-- Insertar registros iniciales en la tabla "Users"
+INSERT INTO [dbo].[Users] ([Name], [Surname])
+VALUES 
+('John', 'Wick'),
+('Ellen', 'Ripley'),
+('Bruce', 'Wayne'),
+('Paul', 'Atreides'),
+('Máximo', 'Décimo Meridio');
+GO
 
