@@ -16,8 +16,6 @@ import com.daw.swapp.model.users.User;
 @Repository
 public class UsersRepository {
     private static final String URL = "jdbc:sqlserver://localhost:1433;databaseName=swapp;encrypt=true;trustServerCertificate=true";
-    // private static final String USERNAME = "sa";
-    // private static final String PASSWORD = "PasswordO1.@";
     private static final String USERNAME = "swappDev";
     private static final String PASSWORD = "123456789a@";
 
@@ -36,29 +34,30 @@ public class UsersRepository {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+            throw new RuntimeException(e.getMessage(), e);
         }
 
         return users;
     }
 
-    public int addUser(User user) throws SQLException {
+    public int addUser(User user) {
         String sql = "INSERT INTO Users (name, surname) VALUES (?, ?)";
 
         try (Connection con = DriverManager.getConnection(URL, USERNAME, PASSWORD)) {
             PreparedStatement stmt = con.prepareStatement(sql);
-            stmt.setString(1, user.name);
-            stmt.setString(2, user.surname);
+            stmt.setString(1, user.getName());
+            stmt.setString(2, user.getSurname());
 
             int affectedRows = stmt.executeUpdate();
             return affectedRows;
 
         } catch (SQLException e) {
-            System.out.println("Error adding user: " + e.getMessage());
-            throw e;
+            e.printStackTrace();
+            throw new RuntimeException(e.getMessage(), e);
         }
     }
 
-    public boolean deleteUser(int id) throws SQLException {
+    public boolean deleteUser(int id) {
         String sql = "DELETE FROM Users WHERE id = ?";
 
         try (Connection con = DriverManager.getConnection(URL, USERNAME, PASSWORD)) {
@@ -67,6 +66,9 @@ public class UsersRepository {
 
             int affectedRows = stmt.executeUpdate();
             return affectedRows > 0;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new RuntimeException(e.getMessage(), e);
         }
     }
 }

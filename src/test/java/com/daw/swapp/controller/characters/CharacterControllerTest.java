@@ -10,7 +10,6 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.ui.Model;
 
-import com.daw.swapp.controller.characters.CharacterController;
 import com.daw.swapp.model.characters.CharacterResponse;
 import com.daw.swapp.service.characters.CharacterService;
 

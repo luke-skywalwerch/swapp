@@ -3,14 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Listado de Personajes de Star Wars</title>
+    <title>Swapi</title>
     <link rel="stylesheet" th:href="@{/css/baseStyles.css}">
     <link rel="stylesheet" th:href="@{/css/characters/styles.css}">
     <script th:src="@{/js/characters/character.js}"></script>
 </head>
 
 <body>
-    <h1>Personajes de Star Wars</h1>
+    <div th:replace="menu :: menuFragment"></div>
+
+    <h1>Star Wars characters</h1>
     <ul>
         <li th:each="character : ${characters}">
             <a href="javascript:void(0)" class="character-link" th:data-uid="${character.uid}">
@@ -20,9 +22,9 @@
         </li>
     </ul>
     <div id="pagination" class="pagination">
-        <button onclick="changePage(-1)">Anterior</button>
+        <button onclick="changePage(-1)">Previous</button>
         <span id="pageNumber"></span>
-        <button onclick="changePage(1)">Siguiente</button>
+        <button onclick="changePage(1)">Next</button>
     </div>
 </body>
 

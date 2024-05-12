@@ -5,7 +5,7 @@ Evergrowing, improvable MVC learning project using:
 * Spring Boot
 * Api calls to swapi: https://www.swapi.tech/
 * MongoDB local access
-* Sql local access
+* Sql local access (with and without ORM)
 * ...
 # database
 * execute usersTable.sql in a sqlServer local db
