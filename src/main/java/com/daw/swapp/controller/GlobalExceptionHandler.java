@@ -9,7 +9,6 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(Exception.class)
     public String handleException(Exception ex, Model model) {
-        model.addAttribute("error", "An internal error occurred. Please try again later.");
         model.addAttribute("errorMessage", ex.getMessage());
         return "error";
     }

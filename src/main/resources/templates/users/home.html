@@ -13,6 +13,8 @@
 </head>
 
 <body>
+    <div th:replace="menu :: menuFragment"></div>
+
     <h1>Users</h1>
     <ul id="userList">
         <li class="row" th:each="user : ${users}">

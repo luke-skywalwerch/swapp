@@ -1,6 +1,5 @@
 package com.daw.swapp.service.users;
 
-import java.sql.SQLException;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,23 +15,14 @@ public class UsersService {
     private UsersRepository usersRepository;
 
     public List<User> listUsers() {
-        List<User> users = usersRepository.getAllUsers();
-        return users;
+        return usersRepository.getAllUsers();
     }
 
     public int addUser(User user) {
-        try {
-            return usersRepository.addUser(user);
-        } catch (SQLException e) {
-            throw new RuntimeException("Error adding user", e);
-        }
+        return usersRepository.addUser(user);
     }
 
     public boolean deleteUser(int id) {
-        try {
-            return usersRepository.deleteUser(id);
-        } catch (SQLException e) {
-            throw new RuntimeException("Error adding user", e);
-        }
+        return usersRepository.deleteUser(id);
     }
 }
