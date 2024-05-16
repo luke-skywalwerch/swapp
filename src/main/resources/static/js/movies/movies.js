@@ -33,4 +33,28 @@ function searchMovies() {
 document.addEventListener('DOMContentLoaded', function () {
     const query = buildSearchQuery();
     history.pushState({}, '', '/movies' + query);
+
+    const moviesList = document.getElementById('moviesList');
+
+    moviesList.addEventListener('click', function (event) {
+        const target = event.target;
+
+        if (target.classList.contains('delete-button')) {
+            const movieId = target.getAttribute('data-id');
+            fetch('/movies/' + movieId, {
+                method: 'DELETE'
+            })
+                .then(response => {
+                    if (response.ok) {
+                        console.log('Movie deleted successfully');
+                        window.location.reload();
+                    } else {
+                        console.error('Failed to delete movie');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+    });
 });

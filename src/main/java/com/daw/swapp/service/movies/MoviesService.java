@@ -86,4 +86,13 @@ public class MoviesService {
             model.addAttribute("searchMaxDuration", maxDuration);
         }
     }
+
+    public boolean deleteMovie(String id) {
+        if (movieRepository.existsById(id)) {
+            movieRepository.deleteById(id);
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

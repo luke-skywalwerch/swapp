@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     userList.addEventListener('click', function(event) {
         const target = event.target;
-
+        
         if (target.classList.contains('delete-button')) {
             const userId = target.getAttribute('data-id');
             fetch('/user/' + userId, {
