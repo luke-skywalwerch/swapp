@@ -11,12 +11,39 @@
 
 <body>
     <div th:replace="~{menu :: menuFragment}"></div>
-    
+
     <h1>Add movie document</h1>
     <form id="addMovieForm">
         <label for="movieInfo">Movie JSON:</label>
         <textarea id="movieInfo" name="movieInfo" rows="15" cols="50"></textarea>
         <button class="addMovie" type="submit">Add movie</button>
+    </form>
+
+    <form id="movieDetailsForm">
+        <h1>Add Movie Details Form</h1>
+        <div class="formContainer">
+            <div class="formColumn">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title">
+
+                <label for="actors">Actors (comma separated):</label>
+                <input type="text" id="actors" name="actors">
+
+                <label for="duration">Duration (in minutes):</label>
+                <input type="number" id="duration" name="duration">
+            </div>
+            <div class="formColumn">
+                <label for="directorName">Director's Name:</label>
+                <input type="text" id="directorName" name="directorName">
+
+                <label for="directorNationality">Director's Nationality:</label>
+                <input type="text" id="directorNationality" name="directorNationality">
+
+                <label for="year">Year:</label>
+                <input type="number" id="year" name="year">
+            </div>
+        </div>
+        <button type="submit" class="button" id="addMovieButton">Add Movie</button>
     </form>
 </body>
 

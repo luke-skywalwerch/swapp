@@ -68,9 +68,13 @@ public class MoviesService {
         return movieRepository.findByDurationBetween(minDuration, maxDuration);
     }
 
-    public Document addMovie(AddMovieRequest movieRequest) {
+    public Document addMovieJson(AddMovieRequest movieRequest) {
         Document document = Document.parse(movieRequest.getMovieInfo());
         return mongoTemplate.insert(document, "movies");
+    }
+
+    public Movie addMovie(Movie movieRequest) {
+        return movieRepository.save(movieRequest);
     }
 
     public void setMovieModel(Model model, List<Movie> movies, String director, Integer minDuration,

@@ -41,8 +41,19 @@ public class MoviesController {
         return "movies/addMovie";
     }
 
+    @PostMapping("/movies/addjson")
+    public ResponseEntity<Object> addMovieJson(@RequestBody AddMovieRequest movieRequest) {
+        try {
+            return ResponseEntity.ok(moviesService.addMovieJson(movieRequest));
+        } catch (Exception e) {
+            return ResponseEntity
+                    .status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body("Error adding movie: " + e.getMessage());
+        }
+    }
+
     @PostMapping("/movies/add")
-    public ResponseEntity<Object> addMovie(@RequestBody AddMovieRequest movieRequest) {
+    public ResponseEntity<Object> addMovie(@RequestBody Movie movieRequest) {
         try {
             return ResponseEntity.ok(moviesService.addMovie(movieRequest));
         } catch (Exception e) {

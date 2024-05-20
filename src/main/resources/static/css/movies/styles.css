@@ -83,7 +83,7 @@ button,
 }
 
 button.addMovie {
-    padding: 20px 20px;
+    padding: 20px;
     border-radius: 0px 0px 20px 20px;
 }
 
@@ -106,4 +106,37 @@ button.searchMovies {
 
 .nullTitle {
     color: red;
+}
+
+#movieDetailsForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+
+    button {
+        width: 400px;
+        min-height: 40px;
+        margin-top: 40px;
+        padding: 20px;
+    }
+
+    .formContainer {
+        display: flex;
+
+        .formColumn {
+            display: flex;
+            flex-direction: column;
+            margin-right: 40px;
+
+
+            input {
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+
+            label {
+                margin: 0px;
+            }
+        }
+    }
 }

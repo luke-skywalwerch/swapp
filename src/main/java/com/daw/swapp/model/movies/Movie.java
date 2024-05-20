@@ -77,7 +77,7 @@ public class Movie {
 
     public static class Director {
         private String name;
-        private String nationallity;
+        private String nationality;
 
         public String getName() {
             return name;
@@ -87,12 +87,12 @@ public class Movie {
             this.name = name;
         }
 
-        public String getNationallity() {
-            return nationallity;
+        public String getNationality() {
+            return nationality;
         }
 
-        public void setNationallity(String nationallity) {
-            this.nationallity = nationallity;
+        public void setNationality(String nationality) {
+            this.nationality = nationality;
         }
     }
 }

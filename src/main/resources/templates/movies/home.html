@@ -28,7 +28,7 @@
     <ul id="moviesList">
         <li th:each="movie : ${movies}">
             <div>
-                <h2 th:class="${movie.title == null ? 'nullTitle' : ''}" th:text="${movie.title ?: 'No title set'}">
+                <h2 th:class="${movie.title == null || movie.title == '' ? 'nullTitle' : ''}" th:text="${movie.title ?: 'No title set'}">
                     Movie
                     title</h2>
                 <p th:text="'Director: ' + ${movie.details?.director?.name}">No director set</p>
