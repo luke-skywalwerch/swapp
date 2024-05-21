@@ -49,7 +49,7 @@ button:hover {
     background-color: #666;
 }
 
-#addMovieForm {
+#addMovieJson {
     display: flex;
     flex-direction: column;
 }

@@ -1,3 +1,4 @@
+// add movie details form
 function addMovie() {
     const title = document.getElementById('title').value;
     const duration = parseInt(document.getElementById('duration').value);
@@ -38,35 +39,42 @@ function addMovie() {
     });
 }
 
+//add complete movie json
+function addMovieJson() {
+    const movieJson = document.getElementById("movieInfo").value;
+
+    var formData = {
+        movieInfo: movieJson
+    };
+
+    var jsonData = JSON.stringify(formData);
+    fetch("/movies/addjson", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: jsonData
+    }).then(response => {
+        if (response.ok) {
+            window.location.href = "/movies";
+        } else {
+            return response.text().then(text => {
+                alert("Error: " + text);
+            });
+        }
+    }).catch(error => {
+        alert("Error: " + error);
+    });
+}
+
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("addMovieForm").addEventListener("submit", function (event) {
+    // add complete movie json
+    document.getElementById("addMovieJson").addEventListener("submit", function (event) {
         event.preventDefault();
-        var movieInfo = document.getElementById("movieInfo").value;
-
-        var formData = {
-            movieInfo: movieInfo
-        };
-
-        var jsonData = JSON.stringify(formData);
-        fetch("/movies/addjson", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: jsonData
-        }).then(response => {
-            if (response.ok) {
-                window.location.href = "/movies";
-            } else {
-                return response.text().then(text => {
-                    alert("Error: " + text);
-                });
-            }
-        }).catch(error => {
-            alert("Error: " + error);
-        });
+        addMovieJson();
     });
 
+    // add movie details form
     document.getElementById('addMovieButton').addEventListener('click', function (event) {
         event.preventDefault();
         addMovie();
