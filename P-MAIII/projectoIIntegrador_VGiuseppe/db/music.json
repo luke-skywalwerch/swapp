@@ -1,0 +1,101 @@
+[{
+    "_id": {
+      "$oid": "66473f00d9f4e08d95e10112"
+    },
+    "id": "1",
+    "Artists": "Ed Sheeran",
+    "Genre": "Pop",
+    "Name": "Shape of You",
+    "ReleaseDate": "06/01/17",
+    "Reproductions": 3000000
+  },
+  {
+    "_id": {
+      "$oid": "66473f00d9f4e08d95e10113"
+    },
+    "id": "2",
+    "Name": "Someone You Loved",
+    "Artists": "Lewis Capaldi",
+    "Genre": "Pop",
+    "ReleaseDate": "08/11/18",
+    "Reproductions": 3000000
+  },
+  {
+    "_id": {
+      "$oid": "66473f00d9f4e08d95e10114"
+    },
+    "id": "3",
+    "Name": "Uptown Funk",
+    "Artists": "Mark Ronson ft. Bruno Mars",
+    "Genre": "Pop",
+    "ReleaseDate": "10/11/14",
+    "Reproductions": 2000000
+  },
+  {
+    "_id": {
+      "$oid": "66473f00d9f4e08d95e10115"
+    },
+    "id": "4",
+    "Name": "See You Again",
+    "Artists": "Wiz Khalifa ft. Charlie Puth",
+    "Genre": "Hip-hop",
+    "ReleaseDate": "06/03/75",
+    "Reproductions": 5000000
+  },
+  {
+    "_id": {
+      "$oid": "66473f00d9f4e08d95e10116"
+    },
+    "id": "5",
+    "Name": "Closer",
+    "Artists": "The Chainsmokers ft. Halsey",
+    "Genre": "Pop",
+    "ReleaseDate": "29/07/16",
+    "Reproductions": 2000000
+  },
+  {
+    "_id": {
+      "$oid": "66473f00d9f4e08d95e10117"
+    },
+    "id": "6",
+    "Name": "Old Town Road",
+    "Artists": "Lil Nas X ft. Billy Ray Cyrus",
+    "Genre": "Hip-hop",
+    "ReleaseDate": "02/12/18",
+    "Reproductions": 2000000
+  },
+  {
+    "_id": {
+      "$oid": "66473f00d9f4e08d95e10118"
+    },
+    "id": "7",
+    "Name": "Bohemian Rhapsody",
+    "Artists": "Queen",
+    "Genre": "Rock",
+    "ReleaseDate": "31/10/15",
+    "Reproductions": 1772000
+  },
+  {
+    "_id": {
+      "$oid": "66473f00d9f4e08d95e10119"
+    },
+    "id": "8",
+    "Name": "Stairway to Heaven",
+    "Artists": "Led Zeppelin",
+    "Genre": "Hard Rock",
+    "ReleaseDate": "08/11/71",
+    "Reproductions": 1772000
+  },
+  {
+    "_id": {
+      "$oid": "6661f3431d2a7b18e6b2fdcd"
+    },
+    "Name": "me",
+    "Artists": "mai",
+    "Genre": "pop",
+    "ReleaseDate": {
+      "$date": "2022-03-06T23:00:00.000Z"
+    },
+    "Reproductions": 300,
+    "_class": "com.spring.reserves.model.Song"
+  }]

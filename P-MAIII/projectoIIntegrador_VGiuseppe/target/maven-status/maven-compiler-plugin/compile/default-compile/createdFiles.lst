@@ -1,0 +1,4 @@
+com\spring\reserves\repository\MongoDbRepository.class
+com\spring\reserves\ReservesApplication.class
+com\spring\reserves\model\Song.class
+com\spring\reserves\controller\HomeController.class

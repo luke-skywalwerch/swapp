@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* CSS */
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    /* make sure it's behind the video */
+}
+
+.background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* make sure it's on top of the background image */
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    /* adjust the opacity to make the video transparent */
+}
+
+.video-overlay video {
+    mix-blend-mode: multiply;
+    /* make the video transparent */
+}
+
+/*continue*/
+.bodys {
+    background-image: url(background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+h1 {
+    color: #fefefe;
+    margin-bottom: 10px;
+}
+
+/*Songs List */
+#songsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#songsList li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ffffff;
+}
+
+#songsList li:last-child {
+    border-bottom: none;
+}
+
+#songsList a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+
+#songsList p {
+    color: #fff;
+}
+
+/*Song Details*/
+.song-details {
+    margin-left: 20px;
+}
+
+.song-details p {
+    margin-bottom: 10px;
+}
+
+/*NEW SONG*/
+
+#form label {
+    color: #fff;
+}
+
+/*SONG*/
+
+#texto {
+    color: #fff;
+}
+
+/*FORM*/
+#form {
+    background-color: #8165b5;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    font-family: Gemulai DEMO;
+    font-size: larger;
+}
+
+#form label {
+    text-align: left;
+    display: inline-block;
+    width: 30%;
+}
+
+#form input,
+#form button {
+    display: inline-block;
+    width: 30%;
+    font-family: Gemulai DEMO;
+}
+
+fieldset {
+    border: 1px solid #fff;
+}
+
+#boton {
+    background-color: #3a0f6e;
+    color: #fff;
+    border: 1rem;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 1rem;
+    font-family: Gemulai DEMO;
+}
+
+#boton:hover {
+    background-color: #5c0f8e;
+    /* darker shade of the original background color */
+    cursor: pointer;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#title {
+    font-family: Lostar;
+    font-size: 300%;
+    text-align: center;
+}
+
+.options {
+    text-align: center;
+}
+
+
+.song-info {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(58, 21, 65, 0.7);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    padding: 1rem;
+    background-color: #5b0f8e42;
+    text-align: center;
+    color: #fff;
+    border-radius: 1rem;
+}

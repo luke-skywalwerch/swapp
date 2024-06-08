@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header id="title">
+    <h1>SONGS</h1>
+    <br>
+
+</header>
+
+<body>
+
+    <div class="background-image">
+        <!-- background image -->
+        <img src="background.png" alt="Background Image">
+    </div>
+    <div class="video-overlay">
+        <!-- transparent video -->
+        <video autoplay muted loop id="background-video">
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+
+    <div class="content">
+        <ul id="songsList">
+            <div class="options">
+                <a th:href="@{/new-song}">
+                    <button id="boton">Add New Song</button>
+                </a>
+                <a th:href="@{/delete-song}">
+                    <button id="boton">Delete Song</button>
+                </a>
+                <a th:href="@{/update-song}">
+                    <button id="boton">Update Song</button>
+                </a>
+            </div>
+            <li th:each="song : ${songs}">
+                <div>
+                    <p class="song-info" th:utext="'Name: ' + ${song.name} + '<br> 
+                        Artist: ' + ${song.artists} + '<br>
+                        Genre: ' + ${song.genre} + '<br> 
+                        Release Date: ' + ${#dates.format(song.releaseDate, 'dd-MM-yyyy')} + '<br> 
+                        Reproductions: ' + ${song.reproductions}">
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 Created With <span style="color:rgb(146, 61, 103);">love</span> By Maïna Boza</p>
+    </footer>
+
+</body>
+
+</html>
